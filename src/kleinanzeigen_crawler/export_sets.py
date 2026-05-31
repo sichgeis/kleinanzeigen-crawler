@@ -30,11 +30,15 @@ class ExportSet:
 
 NEWBORN_GIRL_56 = ExportSet(
     slug="newborn-girl-56",
-    title="Erstausstattung Mädchen bis Größe 56",
-    subtitle="Kuratierte Vinted/Kleinanzeigen-Auswahl von Elisa mit Bildern, Preisen und Paketvorschlag.",
-    suggested_offer=75.0,
-    upper_range="80-85 EUR",
+    title="Erstausstattung Mädchen bis Größe 56 + Ausstattung",
+    subtitle="Kuratierte Vinted/Kleinanzeigen-Auswahl von Elisa mit Kleidung, Kinderwagen/Autoschale, Trage und Schlaf-Zubehör.",
+    suggested_offer=430.0,
+    upper_range="450-480 EUR",
     items=(
+        CuratedItem("kleinanzeigen:3407754823", "Kinderwagen/Autoschale", "Großes Komplettset mit Kinderwagen, Babywanne, Sportsitz, Hazel Babyschale, Isofix und Zubehör"),
+        CuratedItem("kleinanzeigen:3059991803", "Kinderwagen/Autoschale", "Einschlagdecke für Babyschale/Kinderwagen ab Geburt"),
+        CuratedItem("kleinanzeigen:3407731118", "Tragen/Schlafen", "Ergobaby-Trage mit Newborn-Einsatz ab 3,2 kg"),
+        CuratedItem("kleinanzeigen:3179083624", "Tragen/Schlafen", "Alvi Innenschlafsack, Größe 50 enthalten"),
         CuratedItem("vinted:8611457744", "Bodies", "Kurz- und Langarmbody Set für Neugeborene"),
         CuratedItem("vinted:8271674904", "Bodies", "Wickelbody, praktisch für die ersten Wochen"),
         CuratedItem("vinted:8270397339", "Bodies", "Rosa Kurzarmbody Set"),
@@ -57,6 +61,11 @@ NEWBORN_GIRL_56 = ExportSet(
         CuratedItem("vinted:6227665684", "Warm/Accessoires", "Pinke Strumpfhose 50/56"),
         CuratedItem("vinted:8978205806", "Warm/Accessoires", "Newborn Mützchen Set"),
         CuratedItem("vinted:8978057974", "Warm/Accessoires", "Newborn Mützchen Set mit Teddyohren"),
+        CuratedItem("kleinanzeigen:3414384844", "Kleinanzeigen Optional", "Löwenkind Musselintuch + Pads, eher nice-to-have", True),
+        CuratedItem("kleinanzeigen:3357761446", "Kleinanzeigen Optional", "Newborn Stoffschuhe/Taufschuhe, süß aber nicht zwingend", True),
+        CuratedItem("kleinanzeigen:3236357305", "Kleinanzeigen Optional", "Anti-Kratz-Handschuhe als Crosspost-Alternative", True),
+        CuratedItem("kleinanzeigen:3236520747", "Kleinanzeigen Optional", "Sterntaler Newborn Mützchen als Crosspost-Alternative", True),
+        CuratedItem("kleinanzeigen:3236510418", "Kleinanzeigen Optional", "C&A Newborn Mützchen als Crosspost-Alternative", True),
         CuratedItem("vinted:8068316527", "Optional", "Zusätzliches Newborn Mützchen", True),
         CuratedItem("vinted:8068287584", "Optional", "Zusätzliches Newborn Mützchen Set", True),
         CuratedItem("vinted:9000973880", "Optional", "Mütze/Sonnenhut + Halstuch, 0-3 Monate", True),
@@ -300,8 +309,8 @@ def _short_description(description: str) -> str:
 def _default_message(export: ExportSet, total: float) -> str:
     return (
         "Hallo Elisa,\n\n"
-        "ich würde gern ein kleines Erstausstattungs-Paket für ein neugeborenes Mädchen zusammenstellen. "
-        "Interessant wären für uns die ausgewählten Teile in Größe 50/56 bzw. 56.\n\n"
+        "ich würde gern ein Erstausstattungs-Paket für ein neugeborenes Mädchen zusammenstellen. "
+        "Interessant wären für uns die ausgewählten Kleidungsstücke in Größe 50/56 bzw. 56 sowie die passenden größeren Ausstattungsteile.\n\n"
         f"Der Einzelpreis liegt zusammen bei ca. {format_money(total)}. "
         f"Würdest du für das Paket {format_money(export.suggested_offer)} machen, wenn wir es gesammelt nehmen?\n\n"
         "Viele Grüße"
