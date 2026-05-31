@@ -32,10 +32,10 @@ NEWBORN_GIRL_56 = ExportSet(
     slug="newborn-girl-56",
     title="Erstausstattung Mädchen bis Größe 56 + Ausstattung",
     subtitle="Kuratierte Vinted/Kleinanzeigen-Auswahl von Elisa mit Kleidung, Kinderwagen/Autoschale, Trage und Schlaf-Zubehör.",
-    suggested_offer=430.0,
-    upper_range="450-480 EUR",
+    suggested_offer=390.0,
+    upper_range="410-440 EUR",
     items=(
-        CuratedItem("kleinanzeigen:3407754823", "Kinderwagen/Autoschale", "Großes Komplettset mit Kinderwagen, Babywanne, Sportsitz, Hazel Babyschale, Isofix und Zubehör"),
+        CuratedItem("kleinanzeigen:3407761903", "Kinderwagen", "Kinderwagen mit Babywanne, Sportsitz, Fußsack, Sonnensegel, Mückenschutz, Regenschutz und Handwärmern"),
         CuratedItem("kleinanzeigen:3059991803", "Kinderwagen/Autoschale", "Einschlagdecke für Babyschale/Kinderwagen ab Geburt"),
         CuratedItem("kleinanzeigen:3407731118", "Tragen/Schlafen", "Ergobaby-Trage mit Newborn-Einsatz ab 3,2 kg"),
         CuratedItem("kleinanzeigen:3179083624", "Tragen/Schlafen", "Alvi Innenschlafsack, Größe 50 enthalten"),
