@@ -1,0 +1,17 @@
+{
+  "items": [
+    {
+      "id": 9001202823,
+      "title": "Set aus Jeanslatzhose und Wendeweste",
+      "price": {"amount": "14.0", "currency_code": "EUR"},
+      "brand_title": "H&M",
+      "size_title": "12-18 Monate / 80",
+      "status": "Sehr gut",
+      "url": "https://www.vinted.de/items/9001202823-set-aus-jeanslatzhose-und-wendeweste",
+      "photo": {"url": "https://images1.vinted.net/item2.jpg"},
+      "user": {"id": 44026682, "login": "elisa150620"}
+    }
+  ],
+  "pagination": {"current_page": 2, "total_pages": 2, "total_entries": 2, "per_page": 1},
+  "code": 0
+}

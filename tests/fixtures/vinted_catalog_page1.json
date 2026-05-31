@@ -1,0 +1,18 @@
+{
+  "items": [
+    {
+      "id": 9001182448,
+      "title": "Set aus Langarmshirt, Tunika mit Vogelmotiv und Stramplerhose",
+      "price": {"amount": "4.0", "currency_code": "EUR"},
+      "brand_title": "Zara",
+      "size_title": "Bis zu 1 Monat / 50",
+      "status": "Sehr gut",
+      "url": "https://www.vinted.de/items/9001182448-set-aus-langarmshirt-tunika-mit-vogelmotiv-und-stramplerhose",
+      "path": "/items/9001182448-set-aus-langarmshirt-tunika-mit-vogelmotiv-und-stramplerhose",
+      "photo": {"url": "https://images1.vinted.net/item.jpg"},
+      "user": {"id": 44026682, "login": "elisa150620", "profile_url": "https://www.vinted.de/member/44026682-elisa150620"}
+    }
+  ],
+  "pagination": {"current_page": 1, "total_pages": 2, "total_entries": 2, "per_page": 1},
+  "code": 0
+}

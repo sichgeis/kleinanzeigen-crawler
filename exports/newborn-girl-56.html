@@ -1,0 +1,613 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Erstausstattung Mädchen bis Größe 56</title>
+  <style>
+    :root {
+      --ink: #202124;
+      --muted: #667085;
+      --line: #d9dee7;
+      --paper: #fbfaf7;
+      --panel: #ffffff;
+      --accent: #0f766e;
+      --accent-soft: #dff5ef;
+      --rose: #b4235f;
+    }
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color: var(--ink); background: var(--paper); }
+    header { padding: 28px min(5vw, 56px) 18px; border-bottom: 1px solid var(--line); background: var(--panel); }
+    h1 { margin: 0 0 8px; font-size: 32px; line-height: 1.1; letter-spacing: 0; }
+    .subtitle { margin: 0; max-width: 860px; color: var(--muted); font-size: 16px; line-height: 1.45; }
+    .summary { display: grid; grid-template-columns: repeat(4, minmax(140px, 1fr)); gap: 12px; margin-top: 22px; max-width: 920px; }
+    .metric { border: 1px solid var(--line); background: #fff; border-radius: 8px; padding: 12px; }
+    .metric b { display: block; font-size: 20px; margin-bottom: 2px; }
+    .metric span { color: var(--muted); font-size: 13px; }
+    .layout { display: grid; grid-template-columns: minmax(0, 1fr) 360px; gap: 22px; padding: 22px min(5vw, 56px) 48px; align-items: start; }
+    .toolbar { display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 16px; }
+    button, .source { border: 1px solid var(--line); background: #fff; color: var(--ink); border-radius: 8px; padding: 9px 12px; font: inherit; cursor: pointer; text-decoration: none; }
+    button.active { background: var(--accent); border-color: var(--accent); color: #fff; }
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 16px; }
+    .card { background: var(--panel); border: 1px solid var(--line); border-radius: 8px; overflow: hidden; display: flex; flex-direction: column; min-height: 100%; }
+    .card.optional { border-style: dashed; }
+    .photo { aspect-ratio: 4 / 5; background: #eef1f4; display: block; width: 100%; object-fit: cover; }
+    .card-body { padding: 12px; display: flex; flex-direction: column; gap: 9px; flex: 1; }
+    .category { color: var(--accent); font-size: 12px; font-weight: 700; text-transform: uppercase; letter-spacing: .04em; }
+    .title { margin: 0; font-size: 16px; line-height: 1.25; }
+    .facts { display: grid; gap: 4px; color: var(--muted); font-size: 13px; }
+    .price { font-weight: 800; font-size: 18px; color: var(--rose); }
+    .note { font-size: 13px; line-height: 1.35; }
+    .actions { display: flex; gap: 8px; margin-top: auto; align-items: center; justify-content: space-between; }
+    label.pick { display: inline-flex; align-items: center; gap: 7px; font-weight: 700; }
+    aside { position: sticky; top: 16px; background: var(--panel); border: 1px solid var(--line); border-radius: 8px; padding: 16px; }
+    aside h2 { margin: 0 0 10px; font-size: 19px; }
+    .short-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; margin: 12px 0; }
+    .short-metrics .metric { padding: 10px; }
+    textarea { width: 100%; min-height: 220px; border: 1px solid var(--line); border-radius: 8px; padding: 10px; font: inherit; resize: vertical; }
+    .ids { color: var(--muted); font-size: 12px; line-height: 1.4; overflow-wrap: anywhere; }
+    @media (max-width: 980px) {
+      .layout { grid-template-columns: 1fr; }
+      aside { position: static; }
+      .summary { grid-template-columns: repeat(2, minmax(140px, 1fr)); }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Erstausstattung Mädchen bis Größe 56</h1>
+    <p class="subtitle">Kuratierte Vinted/Kleinanzeigen-Auswahl von Elisa mit Bildern, Preisen und Paketvorschlag.</p>
+    <div class="summary">
+      <div class="metric"><b>22</b><span>Kernartikel</span></div>
+      <div class="metric"><b>91,49 EUR</b><span>Listenpreis Kernset</span></div>
+      <div class="metric"><b>75 EUR</b><span>Startangebot</span></div>
+      <div class="metric"><b>80-85 EUR</b><span>Oberer Zielbereich</span></div>
+    </div>
+  </header>
+  <main class="layout">
+    <section>
+      <nav class="toolbar">
+        <button class="filter active" data-filter="all">Alle</button>
+        <button class="filter" data-filter="Bodies">Bodies</button>
+<button class="filter" data-filter="Strampler">Strampler</button>
+<button class="filter" data-filter="Sets">Sets</button>
+<button class="filter" data-filter="Warm/Accessoires">Warm/Accessoires</button>
+<button class="filter" data-filter="Optional">Optional</button>
+      </nav>
+      <div class="grid">
+        
+<article class="card" data-category="Bodies">
+  <img class="photo" src="https://images1.vinted.net/t/05_024fe_1M3e1585b2JUCDChSLkxBGqg/f800/1775814470.jpeg?s=24600743b973cd5bbaeb841d21257385cc0bf2f0" alt="Kurz- und Langarmbody Set für Neugeborene" loading="lazy">
+  <div class="card-body">
+    <div class="category">Bodies</div>
+    <h3 class="title">Kurz- und Langarmbody Set für Neugeborene</h3>
+    <div class="price">2.5 EUR</div>
+    <div class="facts">
+      <span>Bis zu 1 Monat / 50</span>
+      <span>Fixoni · Sehr gut</span>
+    </div>
+    <div class="note"><b>Kurz- und Langarmbody Set für Neugeborene</b> — Kurz- und Langarmbody Set für Neugeborene - ▪️Langarmbody: Fixoni ▪️Kurzarmbody: NoName ▪️Kuschelig weiches Material ▪️Mini Löchlein an einem der Knöpfe beim weißen Kurzarmbody,...</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8611457744" data-price="2.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8611457744-kurz-und-langarmbody-set-fur-neugeborene" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Bodies">
+  <img class="photo" src="https://images1.vinted.net/t/01_01f66_WrQwVkpUuCkhFX1LHoZMFn8U/f800/1772193288.jpeg?s=1236bb486e6954d99b53b58a8c267ee10d6d2aab" alt="Wickelbody mit Fuchsbabys" loading="lazy">
+  <div class="card-body">
+    <div class="category">Bodies</div>
+    <h3 class="title">Wickelbody mit Fuchsbabys</h3>
+    <div class="price">2.49 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>H&amp;M · Sehr gut</span>
+    </div>
+    <div class="note"><b>Wickelbody, praktisch für die ersten Wochen</b> — Wickelbody mit Fuchsbabys - ▪️Schattenfleck am Kragen</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8271674904" data-price="2.49"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8271674904-wickelbody-mit-fuchsbabys" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Bodies">
+  <img class="photo" src="https://images1.vinted.net/t/05_018d6_aAm2ry5WYMViWVEu12TdbXbQ/f800/1772183101.jpeg?s=3704c31d1c796484bee8565a9ef584edf4a93de9" alt="Rosa Kurzarmbody Set &quot;Watch me grow&quot;" loading="lazy">
+  <div class="card-body">
+    <div class="category">Bodies</div>
+    <h3 class="title">Rosa Kurzarmbody Set &quot;Watch me grow&quot;</h3>
+    <div class="price">4 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>H&amp;M · Sehr gut</span>
+    </div>
+    <div class="note"><b>Rosa Kurzarmbody Set</b></div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8270397339" data-price="4.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8270397339-rosa-kurzarmbody-set-watch-me-grow" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Bodies">
+  <img class="photo" src="https://images1.vinted.net/t/01_0249c_fCeoy4hzw3JznZdHsswVjGDG/f800/1748951201.jpeg?s=034d7a1ad8fb797a80cb6248ca5b9badd68464d6" alt="Set aus rosa Wickellangarmbodys mit Enten und Häschen" loading="lazy">
+  <div class="card-body">
+    <div class="category">Bodies</div>
+    <h3 class="title">Set aus rosa Wickellangarmbodys mit Enten und Häschen</h3>
+    <div class="price">3.5 EUR</div>
+    <div class="facts">
+      <span>Bis zu 1 Monat / 50</span>
+      <span>Lindex · Sehr gut</span>
+    </div>
+    <div class="note"><b>Rosa Wickellangarmbodys, Größe 50</b> — Set aus rosa Wickellangarmbodys mit Enten und Häschen - ▪️Links: Lindex, Größe 50 ▪️Rechts: C&amp;A Baby Club, Größe 50</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:6447080730" data-price="3.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/6447080730-set-aus-rosa-wickellangarmbodys-mit-enten-und-haschen" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Bodies">
+  <img class="photo" src="https://images1.vinted.net/t/01_00012_L6LyR6eqN7f9yjDQDkDQokfh/f800/1770384707.jpeg?s=294ba857352afa7c8681d44a09305886b9ce0321" alt="Unisex Set aus Wickellangarmbody und Hose" loading="lazy">
+  <div class="card-body">
+    <div class="category">Bodies</div>
+    <h3 class="title">Unisex Set aus Wickellangarmbody und Hose</h3>
+    <div class="price">4 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>H&amp;M · Sehr gut</span>
+    </div>
+    <div class="note"><b>Wickellangarmbody + Hose, 50/56</b> — Unisex Set aus Wickellangarmbody und Hose - ▪️Body: Alana, Größe 50/56 ▪️Hose: H&amp;M, Größe 56</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8112366397" data-price="4.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8112366397-unisex-set-aus-wickellangarmbody-und-hose" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Bodies">
+  <img class="photo" src="https://images1.vinted.net/t/05_00c4d_vxYq9APZfiQLrwkBfrvAs64X/f800/1770385448.jpeg?s=dba92b1ed187011d69b224aade4464b41c4ca230" alt="Unisex Set aus 2 Wickellangarmbodys und Stramplerhose" loading="lazy">
+  <div class="card-body">
+    <div class="category">Bodies</div>
+    <h3 class="title">Unisex Set aus 2 Wickellangarmbodys und Stramplerhose</h3>
+    <div class="price">11 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>H&amp;M · Sehr gut</span>
+    </div>
+    <div class="note"><b>2 Wickellangarmbodys + Stramplerhose</b> — Unisex Set aus 2 Wickellangarmbodys und Stramplerhose - ▪️Hose&amp;gestreifter Body: H&amp;M, Größe 56 ▪️Unifarbener Body: Lupilu Größe 50/56</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8112472556" data-price="11.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8112472556-unisex-set-aus-2-wickellangarmbodys-und-stramplerhose" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Strampler">
+  <img class="photo" src="https://images1.vinted.net/t/03_01b37_Vn1vxY1Fs8pwz4FWYPKeLHEQ/f800/1779541390.jpeg?s=e34b5b41989d59d72f608bcf0921029d28e6f458" alt="Strampler, Jumpsuit, Onesie mit Herzchen" loading="lazy">
+  <div class="card-body">
+    <div class="category">Strampler</div>
+    <h3 class="title">Strampler, Jumpsuit, Onesie mit Herzchen</h3>
+    <div class="price">5 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>Identic Nature · Neu</span>
+    </div>
+    <div class="note"><b>Neuer Jumpsuit mit Herzchen</b> — Strampler, Jumpsuit, Onesie mit Herzchen - ▪️nur 1x getragen</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8986726704" data-price="5.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8986726704-strampler-jumpsuit-onesie-mit-herzchen" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Strampler">
+  <img class="photo" src="https://images1.vinted.net/t/05_01105_w8RTo1azAvukegKeKmjMfnfJ/f800/1779356039.jpeg?s=1624ba93f8eb7c6f6aa3766f06bd0fc5b7be7ddc" alt="Strampler &quot;Mummy+Daddy=Me&quot; mit Füßen" loading="lazy">
+  <div class="card-body">
+    <div class="category">Strampler</div>
+    <h3 class="title">Strampler &quot;Mummy+Daddy=Me&quot; mit Füßen</h3>
+    <div class="price">1.5 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>Liegelind · Sehr gut</span>
+    </div>
+    <div class="note"><b>Günstiger Strampler mit Füßen</b> — Strampler &quot;Mummy+Daddy=Me&quot; mit Füßen -</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8970905038" data-price="1.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8970905038-strampler-mummydaddyme-mit-fussen" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Strampler">
+  <img class="photo" src="https://images1.vinted.net/t/05_01759_YwZZg6RUTmUXUgncPDroS8jJ/f800/1772099597.jpeg?s=6595db66a7ac50da35cc85bddaa56542430fb22c" alt="Strampler mit Füßen, Flamingo und Spitze" loading="lazy">
+  <div class="card-body">
+    <div class="category">Strampler</div>
+    <h3 class="title">Strampler mit Füßen, Flamingo und Spitze</h3>
+    <div class="price">4.5 EUR</div>
+    <div class="facts">
+      <span>Bis zu 1 Monat / 50</span>
+      <span>Staccato · Sehr gut</span>
+    </div>
+    <div class="note"><b>Strampler mit Füßen, Flamingo und Spitze</b> — Strampler mit Füßen, Flamingo und Spitze - ▪️Süße Details, angezogen ein Traum ▪️Tolle Farbe</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8263763524" data-price="4.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8263763524-strampler-mit-fussen-flamingo-und-spitze" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Strampler">
+  <img class="photo" src="https://images1.vinted.net/t/01_026ea_eqSTEr7v6s1BD1ogkCCsbwqa/f800/1708764786.jpeg?s=f138e2f0ae4132ec37d98bbd78f6d9b0b3ad6dc7" alt="Strampler mit Geschwisterstickerei, Wolke und geschlossenen Füßchen" loading="lazy">
+  <div class="card-body">
+    <div class="category">Strampler</div>
+    <h3 class="title">Strampler mit Geschwisterstickerei, Wolke und geschlossenen Füßchen</h3>
+    <div class="price">2.5 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>Sehr gut</span>
+    </div>
+    <div class="note"><b>Weicher Strampler mit geschlossenen Füßchen</b> — Strampler mit Geschwisterstickerei, Wolke und geschlossenen Füßchen - ▪️Kuschlig weicher Stoff ▪️Größe 50/56</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:4139323575" data-price="2.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/4139323575-strampler-mit-geschwisterstickerei-wolke-und-geschlossenen-fusschen" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Strampler">
+  <img class="photo" src="https://images1.vinted.net/t/02_00da4_B51ZgZw5onbUrPvQZxTA6o3T/f800/1697447797.jpeg?s=dc704f83b73ae3da367a123e19cb42141b216e53" alt="Süßer Strampler mit Füßen und Hundemotiv" loading="lazy">
+  <div class="card-body">
+    <div class="category">Strampler</div>
+    <h3 class="title">Süßer Strampler mit Füßen und Hundemotiv</h3>
+    <div class="price">2.5 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>Sehr gut</span>
+    </div>
+    <div class="note"><b>Weicher Strampler mit Füßen</b> — Süßer Strampler mit Füßen und Hundemotiv - ▪️Kuschelig weicher Stoff ▪️Größe 50/56</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:3616822449" data-price="2.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/3616822449-susser-strampler-mit-fussen-und-hundemotiv" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Strampler">
+  <img class="photo" src="https://images1.vinted.net/t/06_01092_UugM7Ko1ornPTZguvm2bWCPs/f800/1770110089.jpeg?s=8125d541ef0b9c117e2dac66adcc6427f3b948eb" alt="4-teiliges Set mit Giraffenmotiv 🦒" loading="lazy">
+  <div class="card-body">
+    <div class="category">Strampler</div>
+    <h3 class="title">4-teiliges Set mit Giraffenmotiv 🦒</h3>
+    <div class="price">9 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>Lupilu · Sehr gut</span>
+    </div>
+    <div class="note"><b>4-teiliges Set mit Giraffenmotiv</b></div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8089313122" data-price="9.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8089313122-4-teiliges-set-mit-giraffenmotiv" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Sets">
+  <img class="photo" src="https://images1.vinted.net/t/04_02164_JetkamoSoZ1eAH2Tdnz1wnmw/f800/1779703542.jpeg?s=1e4d7a6de34c77b37e5bdaf495be5cfec7273e70" alt="Set aus Langarmshirt, Tunika mit Vogelmotiv und Stramplerhose" loading="lazy">
+  <div class="card-body">
+    <div class="category">Sets</div>
+    <h3 class="title">Set aus Langarmshirt, Tunika mit Vogelmotiv und Stramplerhose</h3>
+    <div class="price">4 EUR</div>
+    <div class="facts">
+      <span>Bis zu 1 Monat / 50</span>
+      <span>Zara · Sehr gut</span>
+    </div>
+    <div class="note"><b>Set aus Shirt/Tunika und Stramplerhose, 50/56</b> — Set aus Langarmshirt, Tunika mit Vogelmotiv und Stramplerhose - ▪️Shirt: Lupilu, Größe 50/56 ▪️Hose: Zara Baby, Größe 62 - fällt aus wie Größe 50/56</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:9001182448" data-price="4.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/9001182448-set-aus-langarmshirt-tunika-mit-vogelmotiv-und-stramplerhose" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Sets">
+  <img class="photo" src="https://images1.vinted.net/t/05_00070_F512ua3ahdaAioMqUd8MoFpG/f800/1779526488.jpeg?s=b557afd3422763f52f1c0ef38092088529da77fb" alt="Frühlingshaftes Set aus Langarmbody mit Häschen und Leggings mit Blumen und Marienkäfern" loading="lazy">
+  <div class="card-body">
+    <div class="category">Sets</div>
+    <h3 class="title">Frühlingshaftes Set aus Langarmbody mit Häschen und Leggings mit Blumen und Marienkäfern</h3>
+    <div class="price">6 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>H&amp;M · Sehr gut</span>
+    </div>
+    <div class="note"><b>Langarmbody + Leggings, 50/56</b> — Frühlingshaftes Set aus Langarmbody mit Häschen und Leggings mit Blumen und Marienkäfern - ▪️Body: Petit Bateau, Größe 56 ▪️Hose: H&amp;M, Größe 50</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8984694440" data-price="6.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8984694440-fruhlingshaftes-set-aus-langarmbody-mit-haschen-und-leggings-mit-blumen-und-marienkafern" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Sets">
+  <img class="photo" src="https://images1.vinted.net/t/06_00297_YG2kjbTMQxe5mUN3aXrkRJEZ/f800/1779526362.jpeg?s=e505f019fe0d9dbaf6c1bf68d42cdf0716be4626" alt="Set aus Stramplerhose mit Hasenmotiv und 2 Langarmshirts" loading="lazy">
+  <div class="card-body">
+    <div class="category">Sets</div>
+    <h3 class="title">Set aus Stramplerhose mit Hasenmotiv und 2 Langarmshirts</h3>
+    <div class="price">7.5 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>H&amp;M · Sehr gut</span>
+    </div>
+    <div class="note"><b>Stramplerhose + 2 Langarmshirts</b> — Set aus Stramplerhose mit Hasenmotiv und 2 Langarmshirts - ▪️Langarmshirts: Liegelind, Größe 56 - an einem Shirt Farbabrieb an den Knöpfen ▪️Hose: H&amp;M, Größe 50</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8984658709" data-price="7.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8984658709-set-aus-stramplerhose-mit-hasenmotiv-und-2-langarmshirts" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Sets">
+  <img class="photo" src="https://images1.vinted.net/t/05_0035c_3JAGPWzE9MBXNvTPM3fRjhsg/f800/1770384983.jpeg?s=de257fe6e383b2ef3aa7f4bced431db09eb6f2bd" alt="Set aus Langarmshirt und gestreifter Hose" loading="lazy">
+  <div class="card-body">
+    <div class="category">Sets</div>
+    <h3 class="title">Set aus Langarmshirt und gestreifter Hose</h3>
+    <div class="price">4 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>Bob der Bär · Sehr gut</span>
+    </div>
+    <div class="note"><b>Langarmshirt + Hose</b> — Set aus Langarmshirt und gestreifter Hose - ▪️Shirt: Hema ▪️Hose: Bob der Bär</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8112405480" data-price="4.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8112405480-set-aus-langarmshirt-und-gestreifter-hose" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Sets">
+  <img class="photo" src="https://images1.vinted.net/t/06_0227a_P8oZNr55V9ATgyvj29vU63T3/f800/1770114623.jpeg?s=f4abec5fe4a26940f176ba7e06d305200ceea5bf" alt="Unisex Set aus Langarmbody und Stramplerhose" loading="lazy">
+  <div class="card-body">
+    <div class="category">Sets</div>
+    <h3 class="title">Unisex Set aus Langarmbody und Stramplerhose</h3>
+    <div class="price">4 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>H&amp;M · Sehr gut</span>
+    </div>
+    <div class="note"><b>Langarmbody + Stramplerhose</b> — Eine Community, Tausende von Marken und die unterschiedlichsten Secondhand-Styles. Bereit loszulegen? So funktioniert&#x27;s.</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8089827015" data-price="4.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8089827015-unisex-set-aus-langarmbody-und-stramplerhose" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Warm/Accessoires">
+  <img class="photo" src="https://images1.vinted.net/t/06_00d29_ZXtgGaBUHmXrbb6qMfbZXtor/f800/1772185069.jpeg?s=59c973eba3365bdb2cab3f0db2c2bce2de1d72d1" alt="Strickjacke, Sweatjacke, Cardigan mit Kapuze, Hoodie" loading="lazy">
+  <div class="card-body">
+    <div class="category">Warm/Accessoires</div>
+    <h3 class="title">Strickjacke, Sweatjacke, Cardigan mit Kapuze, Hoodie</h3>
+    <div class="price">4 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>Ding Dong · Sehr gut</span>
+    </div>
+    <div class="note"><b>Jacke/Cardigan für drüber</b> — Strickjacke, Sweatjacke, Cardigan mit Kapuze, Hoodie - ▪️Fällt größer aus, länger tragbar (bis Größe 68) ▪️Mit Knopfleiste und Taschen</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8270611009" data-price="4.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8270611009-strickjacke-sweatjacke-cardigan-mit-kapuze-hoodie" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Warm/Accessoires">
+  <img class="photo" src="https://images1.vinted.net/t/04_00ed2_qi7BGY8Qom5aG9bxKgJH3PHq/f800/1757064068.jpeg?s=65a360bee82645cd37f9a1564338d156f0652305" alt="Baby Anti-Kratz-Handschuhe, Fäustlinge, Kratzschutz" loading="lazy">
+  <div class="card-body">
+    <div class="category">Warm/Accessoires</div>
+    <h3 class="title">Baby Anti-Kratz-Handschuhe, Fäustlinge, Kratzschutz</h3>
+    <div class="price">2.5 EUR</div>
+    <div class="facts">
+      <span>Bis zu 1 Monat / 50</span>
+      <span>Vertbaudet · Sehr gut</span>
+    </div>
+    <div class="note"><b>Anti-Kratz-Handschuhe</b> — Baby Anti-Kratz-Handschuhe, Fäustlinge, Kratzschutz -</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:7017954755" data-price="2.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/7017954755-baby-anti-kratz-handschuhe-faustlinge-kratzschutz" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Warm/Accessoires">
+  <img class="photo" src="https://images1.vinted.net/t/04_00545_Se7AzCffoY61qTFpWVxrJgzd/f800/1745832460.jpeg?s=d57fcf9e17b30a0135a98ecdc8cdd1cc97005e55" alt="Pinke Strumpfhose" loading="lazy">
+  <div class="card-body">
+    <div class="category">Warm/Accessoires</div>
+    <h3 class="title">Pinke Strumpfhose</h3>
+    <div class="price">1 EUR</div>
+    <div class="facts">
+      <span>Bis zu 1 Monat / 50</span>
+      <span>Topomini · Gut</span>
+    </div>
+    <div class="note"><b>Pinke Strumpfhose 50/56</b> — Pinke Strumpfhose - ▪️Größe 50/56</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:6227665684" data-price="1.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/6227665684-pinke-strumpfhose" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Warm/Accessoires">
+  <img class="photo" src="https://images1.vinted.net/t/05_01370_7GyFZ2bFWP6JgWc2sZoZW1bw/f800/1779442022.jpeg?s=41d2cb8352f49a720c151fa46039410a0f2ed24b" alt="Newborn Mützchen Set" loading="lazy">
+  <div class="card-body">
+    <div class="category">Warm/Accessoires</div>
+    <h3 class="title">Newborn Mützchen Set</h3>
+    <div class="price">3 EUR</div>
+    <div class="facts">
+      <span>0-3 months, 30 cm</span>
+      <span>Sterntaler · Neu</span>
+    </div>
+    <div class="note"><b>Newborn Mützchen Set</b></div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8978205806" data-price="3.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8978205806-newborn-mutzchen-set" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card" data-category="Warm/Accessoires">
+  <img class="photo" src="https://images1.vinted.net/t/03_001c3_8AvpS7R15CMycMtEzqLCMXbW/f800/1779440765.jpeg?s=3dfc62d836909d0bfcdf4dee333c677fc962555e" alt="Newborn Mützchen Set &quot;I am new here&quot; mit Teddyohren" loading="lazy">
+  <div class="card-body">
+    <div class="category">Warm/Accessoires</div>
+    <h3 class="title">Newborn Mützchen Set &quot;I am new here&quot; mit Teddyohren</h3>
+    <div class="price">3 EUR</div>
+    <div class="facts">
+      <span>0-3 months, 30 cm</span>
+      <span>C&amp;A · Neu</span>
+    </div>
+    <div class="note"><b>Newborn Mützchen Set mit Teddyohren</b> — Newborn Mützchen Set &quot;I am new here&quot; mit Teddyohren -</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8978057974" data-price="3.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8978057974-newborn-mutzchen-set-i-am-new-here-mit-teddyohren" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card optional" data-category="Optional">
+  <img class="photo" src="https://images1.vinted.net/t/06_009b5_K5aMaRZiGMugvgz2C5MEUtX7/f800/1769874426.jpeg?s=a138924da7e7a4c377c61a706d1c8286ae8bede8" alt="Newborn Mützchen" loading="lazy">
+  <div class="card-body">
+    <div class="category">Optional · Optional</div>
+    <h3 class="title">Newborn Mützchen</h3>
+    <div class="price">1.5 EUR</div>
+    <div class="facts">
+      <span>0-3 months, 30 cm</span>
+      <span>Sehr gut</span>
+    </div>
+    <div class="note"><b>Zusätzliches Newborn Mützchen</b> — Newborn Mützchen - Passendes Jäckchen auch in meinen anderen Angeboten</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8068316527" data-price="1.5"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8068316527-newborn-mutzchen" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card optional" data-category="Optional">
+  <img class="photo" src="https://images1.vinted.net/t/04_01ae4_H9F34jWp8GACmQMV592ydFyA/f800/1769874271.jpeg?s=5d00c01b968fbb869a80d637bd9d371e30cae9bd" alt="Newborn Mützchen Set" loading="lazy">
+  <div class="card-body">
+    <div class="category">Optional · Optional</div>
+    <h3 class="title">Newborn Mützchen Set</h3>
+    <div class="price">2 EUR</div>
+    <div class="facts">
+      <span>0-3 months, 30 cm</span>
+      <span>C&amp;A Baby Club · Sehr gut</span>
+    </div>
+    <div class="note"><b>Zusätzliches Newborn Mützchen Set</b> — Newborn Mützchen Set - ▪️Rosa Mütze: C&amp;A Baby Club ▪️Weiße Mütze: NoName, passendes Jäckchen auch in meinem Katalog erhältlich</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8068287584" data-price="2.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8068287584-newborn-mutzchen-set" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card optional" data-category="Optional">
+  <img class="photo" src="https://images1.vinted.net/t/06_025a4_KcqAoBbWMyCdrkJHpL4MMEoa/f800/1779702314.jpeg?s=ac1e520c9fde9c1cfce3cbaac224ca3089a085a5" alt="Set aus karierter Mütze, Schirmhut, Sonnenhut + Halstuch mit Kamelen" loading="lazy">
+  <div class="card-body">
+    <div class="category">Optional · Optional</div>
+    <h3 class="title">Set aus karierter Mütze, Schirmhut, Sonnenhut + Halstuch mit Kamelen</h3>
+    <div class="price">2 EUR</div>
+    <div class="facts">
+      <span>0-3 months, 30 cm</span>
+      <span>Noukie&#x27;s · Sehr gut</span>
+    </div>
+    <div class="note"><b>Mütze/Sonnenhut + Halstuch, 0-3 Monate</b> — Set aus karierter Mütze, Schirmhut, Sonnenhut + Halstuch mit Kamelen - ▪️Mütze/Hut: Noukie&#x27;s, Größe 0-3 Monate ▪️Halstuch: ohne Etikett</div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:9000973880" data-price="2.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/9000973880-set-aus-karierter-mutze-schirmhut-sonnenhut-halstuch-mit-kamelen" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+<article class="card optional" data-category="Optional">
+  <img class="photo" src="https://images1.vinted.net/t/03_02078_HwNzsfmJAFGQ6n5Bd6tmCAaZ/f800/1772292187.jpeg?s=80053cd7d34a6a2d396950216300b828e11e8e13" alt="Unisex Handmade Hose mit Affenmotiv" loading="lazy">
+  <div class="card-body">
+    <div class="category">Optional · Optional</div>
+    <h3 class="title">Unisex Handmade Hose mit Affenmotiv</h3>
+    <div class="price">15 EUR</div>
+    <div class="facts">
+      <span>1-3 Monate / 56</span>
+      <span>Handarbeit · Sehr gut</span>
+    </div>
+    <div class="note"><b>Handmade Hose, schön aber teuer</b></div>
+    <div class="actions">
+      <label class="pick"><input type="checkbox" value="vinted:8281205521" data-price="15.0"> Auswählen</label>
+      <a class="source" href="https://www.vinted.de/items/8281205521-unisex-handmade-hose-mit-affenmotiv" target="_blank" rel="noreferrer">Quelle</a>
+    </div>
+  </div>
+</article>
+
+      </div>
+    </section>
+    <aside>
+      <h2>Shortlist</h2>
+      <div class="short-metrics">
+        <div class="metric"><b id="selected-count">0</b><span>Ausgewählt</span></div>
+        <div class="metric"><b id="selected-total">0 EUR</b><span>Summe</span></div>
+      </div>
+      <div class="metric"><b id="offer">75 EUR</b><span>Vorschlag fürs Paket</span></div>
+      <p class="ids" id="selected-ids"></p>
+      <textarea id="message">Hallo Elisa,
+
+ich würde gern ein kleines Erstausstattungs-Paket für ein neugeborenes Mädchen zusammenstellen. Interessant wären für uns die ausgewählten Teile in Größe 50/56 bzw. 56.
+
+Der Einzelpreis liegt zusammen bei ca. 91,49 EUR. Würdest du für das Paket 75 EUR machen, wenn wir es gesammelt nehmen?
+
+Viele Grüße</textarea>
+      <div class="toolbar">
+        <button id="select-core">Kernset wählen</button>
+        <button id="select-none">Leeren</button>
+      </div>
+    </aside>
+  </main>
+  <script data-items="[{&quot;key&quot;: &quot;vinted:8611457744&quot;, &quot;title&quot;: &quot;Kurz- und Langarmbody Set für Neugeborene&quot;, &quot;price&quot;: 2.5, &quot;priceLabel&quot;: &quot;2.5 EUR&quot;, &quot;category&quot;: &quot;Bodies&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8271674904&quot;, &quot;title&quot;: &quot;Wickelbody mit Fuchsbabys&quot;, &quot;price&quot;: 2.49, &quot;priceLabel&quot;: &quot;2.49 EUR&quot;, &quot;category&quot;: &quot;Bodies&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8270397339&quot;, &quot;title&quot;: &quot;Rosa Kurzarmbody Set \&quot;Watch me grow\&quot;&quot;, &quot;price&quot;: 4.0, &quot;priceLabel&quot;: &quot;4 EUR&quot;, &quot;category&quot;: &quot;Bodies&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:6447080730&quot;, &quot;title&quot;: &quot;Set aus rosa Wickellangarmbodys mit Enten und Häschen&quot;, &quot;price&quot;: 3.5, &quot;priceLabel&quot;: &quot;3.5 EUR&quot;, &quot;category&quot;: &quot;Bodies&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8112366397&quot;, &quot;title&quot;: &quot;Unisex Set aus Wickellangarmbody und Hose&quot;, &quot;price&quot;: 4.0, &quot;priceLabel&quot;: &quot;4 EUR&quot;, &quot;category&quot;: &quot;Bodies&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8112472556&quot;, &quot;title&quot;: &quot;Unisex Set aus 2 Wickellangarmbodys und Stramplerhose&quot;, &quot;price&quot;: 11.0, &quot;priceLabel&quot;: &quot;11 EUR&quot;, &quot;category&quot;: &quot;Bodies&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8986726704&quot;, &quot;title&quot;: &quot;Strampler, Jumpsuit, Onesie mit Herzchen&quot;, &quot;price&quot;: 5.0, &quot;priceLabel&quot;: &quot;5 EUR&quot;, &quot;category&quot;: &quot;Strampler&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8970905038&quot;, &quot;title&quot;: &quot;Strampler \&quot;Mummy+Daddy=Me\&quot; mit Füßen&quot;, &quot;price&quot;: 1.5, &quot;priceLabel&quot;: &quot;1.5 EUR&quot;, &quot;category&quot;: &quot;Strampler&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8263763524&quot;, &quot;title&quot;: &quot;Strampler mit Füßen, Flamingo und Spitze&quot;, &quot;price&quot;: 4.5, &quot;priceLabel&quot;: &quot;4.5 EUR&quot;, &quot;category&quot;: &quot;Strampler&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:4139323575&quot;, &quot;title&quot;: &quot;Strampler mit Geschwisterstickerei, Wolke und geschlossenen Füßchen&quot;, &quot;price&quot;: 2.5, &quot;priceLabel&quot;: &quot;2.5 EUR&quot;, &quot;category&quot;: &quot;Strampler&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:3616822449&quot;, &quot;title&quot;: &quot;Süßer Strampler mit Füßen und Hundemotiv&quot;, &quot;price&quot;: 2.5, &quot;priceLabel&quot;: &quot;2.5 EUR&quot;, &quot;category&quot;: &quot;Strampler&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8089313122&quot;, &quot;title&quot;: &quot;4-teiliges Set mit Giraffenmotiv 🦒&quot;, &quot;price&quot;: 9.0, &quot;priceLabel&quot;: &quot;9 EUR&quot;, &quot;category&quot;: &quot;Strampler&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:9001182448&quot;, &quot;title&quot;: &quot;Set aus Langarmshirt, Tunika mit Vogelmotiv und Stramplerhose&quot;, &quot;price&quot;: 4.0, &quot;priceLabel&quot;: &quot;4 EUR&quot;, &quot;category&quot;: &quot;Sets&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8984694440&quot;, &quot;title&quot;: &quot;Frühlingshaftes Set aus Langarmbody mit Häschen und Leggings mit Blumen und Marienkäfern&quot;, &quot;price&quot;: 6.0, &quot;priceLabel&quot;: &quot;6 EUR&quot;, &quot;category&quot;: &quot;Sets&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8984658709&quot;, &quot;title&quot;: &quot;Set aus Stramplerhose mit Hasenmotiv und 2 Langarmshirts&quot;, &quot;price&quot;: 7.5, &quot;priceLabel&quot;: &quot;7.5 EUR&quot;, &quot;category&quot;: &quot;Sets&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8112405480&quot;, &quot;title&quot;: &quot;Set aus Langarmshirt und gestreifter Hose&quot;, &quot;price&quot;: 4.0, &quot;priceLabel&quot;: &quot;4 EUR&quot;, &quot;category&quot;: &quot;Sets&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8089827015&quot;, &quot;title&quot;: &quot;Unisex Set aus Langarmbody und Stramplerhose&quot;, &quot;price&quot;: 4.0, &quot;priceLabel&quot;: &quot;4 EUR&quot;, &quot;category&quot;: &quot;Sets&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8270611009&quot;, &quot;title&quot;: &quot;Strickjacke, Sweatjacke, Cardigan mit Kapuze, Hoodie&quot;, &quot;price&quot;: 4.0, &quot;priceLabel&quot;: &quot;4 EUR&quot;, &quot;category&quot;: &quot;Warm/Accessoires&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:7017954755&quot;, &quot;title&quot;: &quot;Baby Anti-Kratz-Handschuhe, Fäustlinge, Kratzschutz&quot;, &quot;price&quot;: 2.5, &quot;priceLabel&quot;: &quot;2.5 EUR&quot;, &quot;category&quot;: &quot;Warm/Accessoires&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:6227665684&quot;, &quot;title&quot;: &quot;Pinke Strumpfhose&quot;, &quot;price&quot;: 1.0, &quot;priceLabel&quot;: &quot;1 EUR&quot;, &quot;category&quot;: &quot;Warm/Accessoires&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8978205806&quot;, &quot;title&quot;: &quot;Newborn Mützchen Set&quot;, &quot;price&quot;: 3.0, &quot;priceLabel&quot;: &quot;3 EUR&quot;, &quot;category&quot;: &quot;Warm/Accessoires&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8978057974&quot;, &quot;title&quot;: &quot;Newborn Mützchen Set \&quot;I am new here\&quot; mit Teddyohren&quot;, &quot;price&quot;: 3.0, &quot;priceLabel&quot;: &quot;3 EUR&quot;, &quot;category&quot;: &quot;Warm/Accessoires&quot;, &quot;optional&quot;: false}, {&quot;key&quot;: &quot;vinted:8068316527&quot;, &quot;title&quot;: &quot;Newborn Mützchen&quot;, &quot;price&quot;: 1.5, &quot;priceLabel&quot;: &quot;1.5 EUR&quot;, &quot;category&quot;: &quot;Optional&quot;, &quot;optional&quot;: true}, {&quot;key&quot;: &quot;vinted:8068287584&quot;, &quot;title&quot;: &quot;Newborn Mützchen Set&quot;, &quot;price&quot;: 2.0, &quot;priceLabel&quot;: &quot;2 EUR&quot;, &quot;category&quot;: &quot;Optional&quot;, &quot;optional&quot;: true}, {&quot;key&quot;: &quot;vinted:9000973880&quot;, &quot;title&quot;: &quot;Set aus karierter Mütze, Schirmhut, Sonnenhut + Halstuch mit Kamelen&quot;, &quot;price&quot;: 2.0, &quot;priceLabel&quot;: &quot;2 EUR&quot;, &quot;category&quot;: &quot;Optional&quot;, &quot;optional&quot;: true}, {&quot;key&quot;: &quot;vinted:8281205521&quot;, &quot;title&quot;: &quot;Unisex Handmade Hose mit Affenmotiv&quot;, &quot;price&quot;: 15.0, &quot;priceLabel&quot;: &quot;15 EUR&quot;, &quot;category&quot;: &quot;Optional&quot;, &quot;optional&quot;: true}]" data-selected="[&quot;vinted:8611457744&quot;, &quot;vinted:8271674904&quot;, &quot;vinted:8270397339&quot;, &quot;vinted:6447080730&quot;, &quot;vinted:8112366397&quot;, &quot;vinted:8112472556&quot;, &quot;vinted:8986726704&quot;, &quot;vinted:8970905038&quot;, &quot;vinted:8263763524&quot;, &quot;vinted:4139323575&quot;, &quot;vinted:3616822449&quot;, &quot;vinted:8089313122&quot;, &quot;vinted:9001182448&quot;, &quot;vinted:8984694440&quot;, &quot;vinted:8984658709&quot;, &quot;vinted:8112405480&quot;, &quot;vinted:8089827015&quot;, &quot;vinted:8270611009&quot;, &quot;vinted:7017954755&quot;, &quot;vinted:6227665684&quot;, &quot;vinted:8978205806&quot;, &quot;vinted:8978057974&quot;]">
+    const script = document.currentScript;
+    const items = JSON.parse(script.dataset.items);
+    const initialSelected = new Set(JSON.parse(script.dataset.selected));
+    const checks = [...document.querySelectorAll('.pick input')];
+    const format = value => `${value.toFixed(2).replace('.', ',')} EUR`;
+    const update = () => {
+      const selected = checks.filter(c => c.checked).map(c => c.value);
+      const selectedItems = items.filter(item => selected.includes(item.key));
+      const total = selectedItems.reduce((sum, item) => sum + item.price, 0);
+      const offer = Math.max(1, Math.round(total * 0.82));
+      document.getElementById('selected-count').textContent = selected.length;
+      document.getElementById('selected-total').textContent = format(total);
+      document.getElementById('offer').textContent = `${offer} EUR`;
+      document.getElementById('selected-ids').textContent = selected.join(', ');
+      const names = selectedItems.map(item => item.title).join('; ');
+      document.getElementById('message').value = `Hallo Elisa,\n\nich interessiere mich für ein Erstausstattungs-Paket für ein neugeborenes Mädchen. Ausgewählt hätten wir diese Artikel: ${names}.\n\nDer Einzelpreis liegt zusammen bei ca. ${format(total)}. Würdest du für das Paket ${offer} EUR machen, wenn wir es gesammelt nehmen?\n\nViele Grüße`;
+    };
+    checks.forEach(check => {
+      check.checked = initialSelected.has(check.value);
+      check.addEventListener('change', update);
+    });
+    document.querySelectorAll('.filter').forEach(button => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('.filter').forEach(b => b.classList.remove('active'));
+        button.classList.add('active');
+        const filter = button.dataset.filter;
+        document.querySelectorAll('.card').forEach(card => {
+          card.style.display = filter === 'all' || card.dataset.category === filter ? '' : 'none';
+        });
+      });
+    });
+    document.getElementById('select-core').addEventListener('click', () => {
+      checks.forEach(check => check.checked = initialSelected.has(check.value));
+      update();
+    });
+    document.getElementById('select-none').addEventListener('click', () => {
+      checks.forEach(check => check.checked = false);
+      update();
+    });
+    update();
+  </script>
+</body>
+</html>
